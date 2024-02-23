@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav></nav>
+    <div class="sur">
+        <h1> Survey</h1>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label id="number-label" for="number">Age <span class="clue">(optional)</span></label></strong>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+            </div>
+            <div>
+                <p>Which option describes your current role?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                <option>Select current role</option>
+                <option value="Student">Student</option>
+                <option value="Working">Working</option>
+                <option value="Bussiness">Bussiness</option>
+                <option value="Home maker">Home maker</option>
+                <option value="Other">Other</option>
+            </select>
+            <div>
+                <label for="feedback">How was your experience with our product?</label>
+                <textarea id="feedback" name="feedback" required></textarea>
+            </div>
+            <div>
+                <label for="rating">Rate our product:</label>
+                <select id="rating" name="rating" required>
+            </div>
+            <div>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </div>
+            <div>
+                <input type="submit" value="Submit"> 
+            </div>
+        </form>
+    </div>
+</body>
+</html>
